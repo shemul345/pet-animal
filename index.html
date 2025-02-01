@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet animal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d313f4c50e.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .sora> {
+            font-family: "Sora", serif;
+        }
+
+        .adlam-display {
+            font-family: "ADLaM Display", serif;
+        }
+    </style>
+</head>
+
+<body class=".sora">
+    <header>
+        <!-- navbar section -->
+        <nav class="bg-orange-50 mb-8">
+            <div class="navbar justify-between items-center lg:max-w-7xl m-auto">
+                <div class="navbar items-center justify-between">
+                        <div class="navbar-start gap-4">
+                            <img src="images/logo-header.png" alt="">
+                            <p class="text-2xl hidden md:inline-flex">Browse<span class="text-amber-300">4</span>Pets</p>
+                        </div>
+                        <div>
+                            <i class="lg:hidden text-3xl fa-solid fa-bars"></i>
+                        </div>
+                        <div class="navbar-center hidden lg:flex ml-64">
+                            <ul class="text-xl menu menu-horizontal px-1">
+                                <li><a>Find a pet</a></li>
+                                <li><a>Breeds</a></li>
+                                <li><a>Contact us</a></li>
+                            </ul>
+                        </div>
+                    
+                </div>
+
+                <div class="navbar-end hidden lg:inline-flex">
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <button class="btn btn-ghost btn-circle">
+                        <div class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                            <span class="badge badge-xs badge-primary indicator-item"></span>
+                        </div>
+                    </button>
+                </div>
+                <div class="gap-3 hidden lg:inline-flex">
+                    <button
+                        class="border-solid border-2 border-yellow-300 bg-white py-2.5 px-8 rounded-lg text-xl">Login</button>
+                    <button class="border bg-yellow-300 py-3 px-8 rounded-lg text-xl">Register</button>
+                </div>
+            </div>
+            <hr class="bg-stone-500 lg:hidden">
+        </nav>
+
+        <!-- banner section -->
+         <section class="banner max-w-3/4 lg:max-w-7xl mx-auto lg:flex-row lg:mb-32 mb-16">
+            <!-- banner content -->
+            <div class="px-6 lg:absolute lg:mt-24 lg:px-0 max-w-xl">
+                <h1 class="adlam-display text-4xl lg:text-5xl mb-5">Pamper Your Pet,<br> Because They Deserve the Bes</h1>
+                <p class="text-gray-500 mb-5">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <button class="border bg-yellow-300 py-3 px-8 rounded-lg text-xl">Find a post</button>
+            </div>
+            <!-- banner image -->
+            <div class="">
+                <img src="images/cat-big.png" alt="">
+            </div>
+         </section>
+    </header>
+    <main>
+        <!-- category section -->
+         <section class="category lg:max-w-7xl mx-auto">
+            <h3 class="adlam-display px-4 text-3xl lg:text-4xl mb-9">Browse By Categories</h3>
+         <div class="flex">
+            <div class="w-52 h-64 bg-amber-200">
+                <div class="justify-center">
+                <img src="images/dog-cartoon.png" alt="">
+                </div>
+                <div>
+                    <h5 class="adlam-display text-xl">Dog</h5>
+                    <p>3 items</p>
+                </div>
+            </div>
+         </div>
+         </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
